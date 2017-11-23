@@ -1,0 +1,54 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.app-warp {
+    padding: 16px;
+    .content-field {
+        .content-field-textarea {
+            display: block;
+            width: calc(100% - 12px);
+            height: 100px;
+            margin: 0 auto;
+            padding: 6px;
+            border: 1px solid rgba(200, 200, 200, 1);
+            border-radius: 3px;
+            font-size: 14px;
+            line-height: 22px;
+            color: #333;
+            outline: none;
+            resize: none;
+            &:focus {
+                border: 1px solid #00a3cf;
+            }
+        }
+    }
+    .content-field-button {
+        display: flex;
+        justify-content: flex-start;
+        margin: 10px 10px 0 0;
+        button {
+            margin: 0 0 0 10px;
+            padding: 4px 8px;
+            width: 72px;
+            border: none;
+            border-radius: 3px;
+            background-color: #00a3cf;
+            color: #fff;
+            outline: none;
+            cursor: pointer;
+            &:active {
+                background: #13c1f1;
+            }
+            &:first-child {
+                margin: 0 0 0 0;
+            }
+            &:disabled {
+                background: rgba(0, 163, 207, .6);
+                cursor: not-allowed;
+            }
+        }
+    }
+}
